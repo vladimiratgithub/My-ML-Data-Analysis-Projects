@@ -9,5 +9,5 @@ The labels from (train_labs.csv) correspond to 25 columns, have values 0 or 1 an
 Here, I provide only the code file that utilizes kNN, PCA and SVM algorithms to impute missing data (first two) and to predict a possible need of tests for patients (SVM and SVR for continous labels)
 
 # Project in Python (regression)
-Actual files: RidgeRegression.py
+Actual files: RidgeRegression.py <br>
 This project fits a model on the train data using CV that can be later used for prediction using the test data 
