@@ -11,7 +11,6 @@ from sklearn.model_selection import cross_val_score
 from sklearn import preprocessing
 
 from sklearn.impute import KNNImputer
-from sklearn.decomposition import PCA
 
 
 
