@@ -13,7 +13,7 @@ from sklearn import preprocessing
 from sklearn.impute import KNNImputer
 
 
-def dfImputer(flag, kNN_flag):  
+def dataImputer(flag, kNN_flag):  
     # flag == 1 corresponds to the shorter version for testing; kNN_flag = # of nearest neihghbours in kNN
     df_train_X= pd.read_csv("train_f.csv") # with pid columns
     df_test_X= pd.read_csv("test_f.csv")  # with pid's as I calculate labels for them
@@ -215,7 +215,7 @@ def Optimizer(df_train_X, df_train_labels, df_test_X, df_test_labels):
 
 # MAIN CODE
 
-dfImputer(1, 5)  # impute the data; 0=default, all the data is takein into account, 1 - first 10k points
+dataImputer(1, 5)  # impute the data; 0=default, all the data is takein into account, 1 - first 10k points
 
 df_train_X= pd.read_csv("df_X_train.csv") # with pid columns
 df_test_X= pd.read_csv("df_X_test.csv") # with pid columns
