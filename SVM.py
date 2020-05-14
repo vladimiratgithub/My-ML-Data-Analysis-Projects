@@ -13,7 +13,6 @@ from sklearn import preprocessing
 from sklearn.impute import KNNImputer
 
 
-
 def dfImputer(flag, kNN_flag):  
     # flag == 1 corresponds to the shorter version for testing; kNN_flag = # of nearest neihghbours in kNN
     df_train_X= pd.read_csv("train_f.csv") # with pid columns
